@@ -1,0 +1,19 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,800&family=Lilita+One&display=swap" rel="stylesheet">
+
+block content
+
+  head
+    title ProjetLab
+    style
+      include ../public/stylesheets/index.css
+
+  body
+    div(class="box")
+      div(class="log")
+        form(action="/login",method="get")
+          button(type="submit") Login
+      div(class="reg")
+        form(action="/register",method="get")
+          button(type="submit") Register

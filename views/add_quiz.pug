@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    head
+        title AddQuizz
+        style
+          include ../public/stylesheets/style.css
+    header 
+        a(href="/index") Home page
+        a(href="/admin") Back to admin page
+
+    h1.titre Add a new quiz
+    form(id="quizForm", action="/add_quiz", method="POST")
+      label(for="name") Quiz Title
+      input(type="text", id="name", name="name", required)
+      button(type='submit', id='generateQuestionsBtn') Generate Questions
+      

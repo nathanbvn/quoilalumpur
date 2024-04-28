@@ -1,0 +1,20 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,800&family=Lilita+One&display=swap" rel="stylesheet">
+
+block content
+    head
+        title Delete
+        style
+          include ../public/stylesheets/menuStyle.css
+    header
+        a(href="/index") Home page
+        form(action="/admin",method="post")
+            button(type="submit",class="btnAdmin") Back to admin page
+    h1 Delete a quiz 
+    each quiz in quizz
+            div(class="box")
+                h4= quiz.name
+                form(action="/deleteQuiz", method="post")
+                    input(type="hidden", name="id_quizz", value= quiz.id_quizz)
+                    button(type="submit",class="btnMod") Delete

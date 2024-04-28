@@ -1,0 +1,91 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,800&family=Lilita+One&display=swap" rel="stylesheet">
+
+block content
+    head
+        title Edit
+        style
+          include ../public/stylesheets/form.css
+    header
+        a(href="/index") Home page
+        form(action="/admin",method="post")
+            button(type="submit",class="btnAdmin") Back to admin page
+    div(class="title")
+        h1 Edit the quiz : 
+        h1= quiz.name
+    div(class="page")
+        each question in questions
+            div.box
+                div(class="grille")
+                    div(class="column1")
+                        div(class="row1")
+                            h4= question.question
+                        div(class="row2")
+                            p= question.prop1
+                        div(class="row3")
+                            p= question.prop2
+                        div(class="row4")
+                            p= question.prop3
+                        div(class="row5")
+                            p= question.bonne_rep
+
+                    form(action="/modifyQuestion", method="POST")
+                        div(class="column2")
+                            div(class="row1")
+                                input(type="text",name="newQuestion",value=newQuestion)
+                            div(class="row2")
+                                input(type="text",name="newProp1",value=newProp1)
+                            div(class="row3")
+                                input(type="text",name="newProp2",value=newProp2)
+                            div(class="row4")
+                                input(type="text",name="newProp3",value=newProp3)
+                            div(class="row5")
+                                input(type="text",name="newBonneRep",value=newBonneRep)
+                            div(class="column3")
+                                input(type="hidden", name="id_quizz", value=quiz.id_quizz)
+                                input(type="hidden", name="id_question", value=question.id_question)
+                                button(type="submit", name="modifyQuestion",class="btnMod",value=quiz.id_question ) Modify
+
+
+                        
+                    form(action="/deleteQuestion", method="POST")
+                        div(class="column3")
+                            input(type="hidden", name="id_quizz", value=quiz.id_quizz)
+                            input(type="hidden", name="id_question", value=question.id_question)
+                            button(type="submit", name="deleteQuestion",class="btnDel", value=quiz.id_question) Delete
+
+    form(action="/addQuestion2", method="POST")
+        div(class="screen")
+            input(type="hidden", name="id_quizz", value=quiz.id_quizz)
+            div(class="questionDiv")
+                label(for="newQuestion") New Question:
+                    input(type="text", name="newQuestion", required)
+            div(class="questionDiv")
+                label(for="prop1") Option 1:
+                input(type="text", name="prop1", required)
+            div(class="questionDiv")
+                label(for="prop2") Option 2:
+                input(type="text", name="prop2", required)
+            div(class="questionDiv")
+                label(for="prop3") Option 3:
+                input(type="text", name="prop3", required)
+
+
+            label(for="bonne_rep") Select the correct answer:
+            input(type="radio", id="correctAnswer1", name="bonne_rep", value="1", required) 
+            label(for="bonne_rep1") Option 1
+
+            input(type="radio", id="correctAnswer2", name="bonne_rep", value="2", required) 
+            label(for="bonne_rep2") Option 2
+
+            input(type="radio", id="correctAnswer3", name="bonne_rep", value="3", required) 
+            label(for="bonne_rep3") Option 3
+
+        
+            button(type="submit", name="addQuestion2",class="btnAdd2", value=quiz.id_quizz) Add Question  
+
+
+
+
+

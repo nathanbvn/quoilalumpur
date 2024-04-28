@@ -1,0 +1,25 @@
+INSERT INTO `quizz` (`id_quizz`, `name`) VALUES ('1', 'ho');
+INSERT INTO `quizz` (`id_quizz`, `name`) VALUES ('2', 'mo');
+INSERT INTO `quizz` (`id_quizz`, `name`) VALUES ('3', 'tr');
+INSERT INTO `quizz` (`id_quizz`, `name`) VALUES ('4', 'pe');
+
+INSERT INTO `questions` (`id_question`, `question`, `prop1`, `prop2`, `prop3`, `bonne_rep`, `id_quizz`) VALUES ('1', 'https://w0.peakpx.com/wallpaper/106/1016/HD-wallpaper-horse-animal-race-running.jpg', 'hollow', 'horse', 'honor', '2', '1');
+INSERT INTO `questions` (`id_question`, `question`, `prop1`, `prop2`, `prop3`, `bonne_rep`, `id_quizz`) VALUES ('2', 'https://e1.pxfuel.com/desktop-wallpaper/628/348/desktop-wallpaper-modern-house-mansion-iphone.jpg', 'house', 'hospital', 'homework', '1', '1');
+INSERT INTO `questions` (`id_question`, `question`, `prop1`, `prop2`, `prop3`, `bonne_rep`, `id_quizz`) VALUES ('3', 'https://wallpapers.com/images/hd/western-cowboy-iphone-iygpr6mi2zumewgw.jpg', 'honey', 'howdy', 'honest', '2', '1');
+INSERT INTO `questions` (`id_question`, `question`, `prop1`, `prop2`, `prop3`, `bonne_rep`, `id_quizz`) VALUES ('4', 'https://wallpapercave.com/wp/wp4715897.jpg', 'howler', 'honor', 'horror', '3', '1');
+
+INSERT INTO `questions` (`id_question`, `question`, `prop1`, `prop2`, `prop3`, `bonne_rep`, `id_quizz`) VALUES ('5', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8X66SEi6tNSwVVeADETxvJu7ET_teFIk9Lg&usqp=CAU', 'money', 'monkey', 'moment', '2', '2');
+INSERT INTO `questions` (`id_question`, `question`, `prop1`, `prop2`, `prop3`, `bonne_rep`, `id_quizz`) VALUES ('6', 'https://i.pinimg.com/736x/e3/df/3a/e3df3aac8bcdfac2e98796041732dda0.jpg', 'monitor', 'movie', 'mouse', '3', '2');
+INSERT INTO `questions` (`id_question`, `question`, `prop1`, `prop2`, `prop3`, `bonne_rep`, `id_quizz`) VALUES ('7', 'https://i.pinimg.com/originals/3a/c8/22/3ac8224350f592ba8e27692413270029.jpg', 'money', 'motel', 'mood', '1', '2');
+INSERT INTO `questions` (`id_question`, `question`, `prop1`, `prop2`, `prop3`, `bonne_rep`, `id_quizz`) VALUES ('8', 'https://e1.pxfuel.com/desktop-wallpaper/391/155/desktop-wallpaper-girls-for-iphone-289584-beauty-girl-model-iphone.jpg', 'model', 'mother', 'mouth', '1', '2');
+
+
+INSERT INTO `questions` (`id_question`, `question`, `prop1`, `prop2`, `prop3`, `bonne_rep`, `id_quizz`) VALUES ('9', 'https://e1.pxfuel.com/desktop-wallpaper/107/648/desktop-wallpaper-train-backgrounds-group-steam-train.jpg', 'trigon', 'train', 'truth', '2', '3');
+INSERT INTO `questions` (`id_question`, `question`, `prop1`, `prop2`, `prop3`, `bonne_rep`, `id_quizz`) VALUES ('10', 'https://wallpapercave.com/wp/wp8884603.jpg', 'trend', 'trench', 'trippy', '2', '3');
+INSERT INTO `questions` (`id_question`, `question`, `prop1`, `prop2`, `prop3`, `bonne_rep`, `id_quizz`) VALUES ('11', 'https://w0.peakpx.com/wallpaper/509/868/HD-wallpaper-indide-bar-business-inspiration-quotes-trading-quotes-trading-charts-bullish.jpg', 'trail', 'trait', 'trade', '3', '3');
+INSERT INTO `questions` (`id_question`, `question`, `prop1`, `prop2`, `prop3`, `bonne_rep`, `id_quizz`) VALUES ('12', 'https://w0.peakpx.com/wallpaper/477/168/HD-wallpaper-tropical-beach-palms-paradise-sea.jpg', 'travel', 'tropic', 'trying', '2', '3');
+
+INSERT INTO `questions` (`id_question`, `question`, `prop1`, `prop2`, `prop3`, `bonne_rep`, `id_quizz`) VALUES ('13', 'https://images.pexels.com/photos/7486672/pexels-photo-7486672.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', 'pedalo', 'peddle', 'pellet', '1', '4');
+INSERT INTO `questions` (`id_question`, `question`, `prop1`, `prop2`, `prop3`, `bonne_rep`, `id_quizz`) VALUES ('14', 'https://wallpapercave.com/wp/wp9472002.jpg', 'person', 'pennies', 'perp', '3', '4');
+INSERT INTO `questions` (`id_question`, `question`, `prop1`, `prop2`, `prop3`, `bonne_rep`, `id_quizz`) VALUES ('15', 'https://i.pinimg.com/564x/1b/49/62/1b4962b4e88a2f85592b7acb5b16c570.jpg', 'pelican', 'peacock', 'pelorus', '1', '4');
+

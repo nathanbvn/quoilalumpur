@@ -1,0 +1,127 @@
+html{
+	top : 20px;
+	position: relative;
+	font-family: 'DM Sans', sans-serif;
+	font-family: 'Lilita One', sans-serif;
+	font-weight: 700;
+	background-position: center; /* Center the image */
+  	background-size: cover; /* Resize the background image to cover the entire container */
+	background-image: url("../images/bgclean.jpg");
+}
+
+.btnAdd,.btnFinish{
+	width: 160px;
+	height: 50px;
+	background-color: black ;
+	color: white;
+	font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: 100%;
+	font-weight: 700;
+	border-radius: 30px;
+	cursor: pointer;
+	border-color: white ;
+}
+.btnAdd:hover,.btnFinish:hover{
+	background-color : darkgrey;
+
+}
+
+.screen{
+	padding-left: 40%;
+}
+
+.radio-group{
+	padding-left: 15%;
+}
+
+.screen label{
+	margin-right: 10px;
+}
+
+.screen label,.screen input{
+	margin-bottom: 20px;
+}
+.btnAdmin{
+	border: none;
+	background: unset;
+	font-family: 'DM Sans', sans-serif;
+	font-family: 'Lilita One', sans-serif;
+	font-weight: 700;
+	text-decoration: underline;
+	cursor: pointer;
+	color : #551A8B;
+	font-size: 103%;
+}
+
+.btnAdd2,.btnMod,.btnDel{
+	width: 150px;
+	height: 40px;
+	background-color: black ;
+	color: white;
+	font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-weight: 700;
+	border-radius: 30px;
+	cursor: pointer;
+	border-color: white ;
+}
+.btnAdd2:hover,.btnMod:hover,.btnDel:hover{
+	background-color : darkgrey;
+
+}
+
+.title{
+	display: flex;
+}
+
+.title h1{
+	margin-right: 20px;
+}
+
+.box{
+	border: solid;
+	height: 225px;
+	border-radius: 10px ;
+	margin-bottom: 20px;
+	width: 800px;
+}
+.grille{
+	display: grid;
+	height: 100%;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.column1{
+	grid-column: 1/1;
+	justify-self: right;
+	justify-content: right;
+	text-align: right;	
+}
+
+.column2{
+	justify-self: center;
+	justify-content: center;
+	text-align: center;	
+}
+
+.column3{
+	justify-self: center;
+	justify-content: center;
+	text-align: center;	
+	grid-column: 3/3;
+}
+
+.column2 input{
+	margin-top: 15px;
+}
+
+.btnMod{
+	position: relative;
+	left : 100%;
+}
+
+.page{
+	margin-left: 20%;
+}
+.title{
+	margin-left:40% ;
+}

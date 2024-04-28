@@ -1,0 +1,58 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,800&family=Lilita+One&display=swap" rel="stylesheet">
+
+block content
+  head
+    title ProjetLab
+    style
+      include ../public/stylesheets/form.css
+
+  header 
+    a(href="/index") Home page
+    form(action="/admin",method="post")
+        button(type="submit",class="btnAdmin") Back to admin page
+            
+  div(class="screen")
+    h1 Add a new question
+
+    form(id="questionForm", action=`/questions_form/${id_quizz}`, method="POST")
+      div(class="questionDiv1")
+        label(for="question") Question:
+        input(type="text", id="question", name="question", required)
+      div(class="questionDiv2")
+        label(for="prop1") Option 1:
+        input(type="text", id="prop1", name="prop1", required)
+      div(class="questionDiv3")
+        label(for="prop2") Option 2:
+        input(type="text", id="prop2", name="prop2", required)
+      div(class="questionDiv4")
+        label(for="prop3") Option 3:
+        input(type="text", id="prop3", name="prop3", required)
+
+
+      div.question-container
+        label(for="bonne_rep") Correct answer:
+        div.radio-group 
+           input(type="radio", id="correctAnswer1", name="bonne_rep", value="1", required) 
+           label(for="bonne_rep1") Option 1
+
+        div.radio-group 
+           input(type="radio", id="correctAnswer2", name="bonne_rep", value="2", required) 
+           label(for="bonne_rep2") Option 2
+
+        div.radio-group 
+           input(type="radio", id="correctAnswer3", name="bonne_rep", value="3", required) 
+           label(for="bonne_rep3") Option 3
+
+      input(type="hidden", name="action", id="action")
+      
+      div.button-container
+        button(type='button', name='action',class="btnAdd" ,value='addQuestion' onclick="setAction('addQuestion')") Next Question
+        button(type='button', name='action',class="btnFinish" ,value='finishQuiz' onclick="setAction('finishQuiz')") Finish Quiz
+
+  script.
+      function setAction(action) {
+          document.getElementById('action').value = action;
+          document.getElementById('questionForm').submit();
+      }

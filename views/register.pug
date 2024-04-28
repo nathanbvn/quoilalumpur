@@ -1,0 +1,23 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,800&family=Lilita+One&display=swap" rel="stylesheet">
+
+block content
+  head
+    title Login
+    style
+      include ../public/stylesheets/index.css
+  header 
+  div(class="box2")
+    a(href="/index") Home page
+    form(action="/register", method="POST")
+      div(class="allform")
+        div(class="clusername")
+          label(for="username") Username
+          input(type="text", id="username", name="username", required)
+        div(class="clpass")
+          label(for="password") Password
+          input(type="password", id="password", name="password", required)
+        div(class="btnSub")
+          button(type="submit") Register
+    a(href="/login") Already logged in ? Login

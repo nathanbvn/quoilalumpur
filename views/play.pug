@@ -1,0 +1,28 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,800&family=Lilita+One&display=swap" rel="stylesheet">
+
+
+style
+	include ../public/stylesheets/gameStyle.css
+
+script
+	include ../public/javascripts/game.js
+	
+div(class="page")
+	each question in questions
+		div(class="box",id='question'+question.id_question)
+			input(type="hidden",value= question.bonne_rep,class="rep")
+			div(id="imgGrid")
+				img(src=question.question)
+			div(class="proposition",id="prop1")
+				button(onclick="verifyAnswer(1)",id="btn1")= question.prop1
+			div(class="proposition",id="prop2")
+				button(onclick="verifyAnswer(2)",id="btn2")= question.prop2
+			div(class="proposition",id="prop3")
+				button(onclick="verifyAnswer(3)",id="btn3")= question.prop3
+	div(class="ending")
+		form(action="/results",method="post")
+			input(type="hidden",name="score",id="idScore",value=0)
+			input(type="hidden",name="quizz_id",value=quizz_id)
+			button(type="submit",id="btnEnd",style='display: none;') Finish Quizz

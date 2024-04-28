@@ -1,0 +1,20 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,800&family=Lilita+One&display=swap" rel="stylesheet">
+
+
+style
+	include ../public/stylesheets/resultStyle.css
+
+
+div(class="screen")
+	div(class="box")
+		h1 Quizz Finished ! 
+
+		h2 Your score : 
+		div(class="scoreText")
+			h2= score
+			h2 /
+			h2= nb_question
+		form(action="/choice",method="post")
+			button(type="submit") Home

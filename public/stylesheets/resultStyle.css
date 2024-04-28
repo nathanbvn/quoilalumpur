@@ -1,0 +1,33 @@
+html{
+	top : 20px;
+	position: relative;
+	font-family: 'DM Sans', sans-serif;
+	font-family: 'Lilita One', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	background-position: center; /* Center the image */
+  	background-repeat: no-repeat; /* Do not repeat the image */
+  	background-size: cover; /* Resize the background image to cover the entire container */
+	background-image: url("../images/bg.png");
+}
+
+
+.screen{
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr;
+}
+
+.box{
+	grid-column: 2/2;
+	justify-self: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.scoreText {
+    display: grid;
+    justify-self: center;
+	justify-content: center;
+    grid-template-columns: repeat(3, 20px);
+    justify-items: center;
+}

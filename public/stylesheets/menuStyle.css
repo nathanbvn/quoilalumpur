@@ -1,0 +1,65 @@
+html{
+	top : 20px;
+	position: relative;
+	font-family: 'DM Sans', sans-serif;
+	font-family: 'Lilita One', sans-serif;
+	font-weight: 700;
+	background-position: center; /* Center the image */
+  	background-size: cover; /* Resize the background image to cover the entire container */
+	background-image: url("../images/bgclean.jpg");
+}
+
+.box{
+	background-color: white;
+	position: relative;
+	top : 10%;
+	border: solid;
+	border-radius: 30px ;
+	width: 200px;
+	height: 150px;
+	float : left;
+	margin: 10px;
+	justify-content: center;
+	text-align: center;
+}
+
+.btnPlay,.btnMod{
+	width: 150px;
+	height: 40px;
+	background-color: black ;
+	color: white;
+	font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: 100%;
+	font-weight: 700;
+	border-radius: 30px;
+	cursor: pointer;
+	border-color: white ;
+}
+.btnPlay:hover,.btnMod:hover{
+	background-color : darkgrey;
+
+}
+
+
+h4{
+	color : black;
+
+	font-size: 150%;
+}
+
+h1{
+	font-size: 250%;
+	text-align: center ;
+}
+
+.btnAdmin{
+	border: none;
+	background: unset;
+	font-family: 'DM Sans', sans-serif;
+	font-family: 'Lilita One', sans-serif;
+	font-weight: 700;
+	text-decoration: underline;
+	cursor: pointer;
+	color : #551A8B;
+	font-size: 103%;
+}

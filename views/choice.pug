@@ -1,0 +1,18 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,800&family=Lilita+One&display=swap" rel="stylesheet">
+
+
+style
+    include ../public/stylesheets/menuStyle.css
+
+a(href="/index") Home page
+
+h1 Choose a quizz ! 
+
+each quiz in quizz
+        div(class="box")
+            h4= quiz.name
+            form(action="/play", method="post")
+                input(type="hidden", name="quizz_id", value= quiz.id_quizz)
+                button(type="submit",class="btnPlay") Play

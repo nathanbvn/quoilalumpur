@@ -1,0 +1,92 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url("../images/bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'DM Sans', sans-serif;
+	font-family: 'Lilita One', sans-serif;
+	font-weight: 700;
+  font-size: 1.5rem;
+}
+
+
+button{
+	width: 150px;
+	background-color: white ;
+	color: black;
+	font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: 100%;
+	font-weight: 700;
+	border-radius: 30px;
+	cursor: pointer;
+	border-color: black ;
+	padding: 10px;
+}
+
+button:hover{
+	background-color: lightgrey;
+}
+
+.box{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+	grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr ;
+	width: 100vw;
+  	height: 100vh;
+  	justify-self: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.log{
+	top: 20px;
+	position: relative;
+	grid-column: 2/2;
+	grid-row: 2/2;
+}
+
+.reg{
+	top: 20px;
+	position: relative;
+	grid-column: 2/2;
+	grid-row: 4/4;
+}
+#username,#password{
+	margin-left:20px ;
+}
+
+.clusername,.clpass,.btnSub{
+	padding-top: 20px ;
+}
+.allform {
+	position: relative;
+	top :150%;
+	grid-row: 4/4;
+	grid-column: 2/2;
+}
+
+.box2{
+	display: grid;
+	grid-template-columns: 0.5fr 1fr 0.5fr ;
+	grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr ;
+	width: 100vw;
+  	height: 100vh;
+  	justify-self: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.boxAdmin{
+	position: relative;
+	left: 43%;
+}
+
+.button2{
+	margin-top: 20px;
+}

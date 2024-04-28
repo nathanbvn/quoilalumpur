@@ -1,0 +1,136 @@
+html{
+	background-position: center; /* Center the image */
+  	background-repeat: no-repeat; /* Do not repeat the image */
+  	background-size: cover; /* Resize the background image to cover the entire container */
+	background-image: url("../images/bg.png");
+	font-family: 'Lilita One', sans-serif;
+	font-family: 'DM Sans', sans-serif;
+}
+
+#imgGrid{
+	width: 300px;
+	height: 550px;
+	border-radius: 30px;
+	grid-column:1/5;
+	grid-row:1/11;
+}
+
+#imgGrid img {
+	border-radius: 30px;
+	width: 300px;
+	height: 550px;
+}
+/*
+button{
+	cursor: pointer	;
+	text-align: center;
+	border : solid;
+	width: 100px;
+	height: 50px;
+	background-color: white;
+	border-radius: 50px ;
+}*/
+
+.box{
+	margin-top: 2%;
+	margin-left: auto;
+    margin-right: auto;
+	width: 300px;
+	height: 550px;
+	display:none;
+	grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	border: solid;
+	border-radius: 30px;
+}
+
+#prop1{
+	grid-column: 1/2;
+	grid-row: 9/9;
+}
+
+#prop2{
+	grid-column: 2/3;
+	grid-row: 10/10;
+}
+
+#prop3{
+	grid-column: 3/4;
+	grid-row: 9/9;
+}
+
+@keyframes shaking {
+ 0% { transform: translateX(0) }
+ 25% { transform: translateX(5px) }
+ 50% { transform: translateX(-5px) }
+ 75% { transform: translateX(5px) }
+ 100% { transform: translateX(0) }
+}
+
+#btn1{
+	transform: rotate(-4deg);
+}
+#btn3{
+	transform: rotate(4deg);
+}
+
+/* CSS */
+button {
+  background-color: white;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+button:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: .75rem 3rem;
+    font-size: 1rem;
+  }
+}
+
+.ending{
+	position: relative;
+	bottom: 100px;
+	float : right;
+	right: 30px;
+}
+
+#btnEnd{
+	width: 250px;
+}

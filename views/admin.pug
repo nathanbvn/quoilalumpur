@@ -1,0 +1,22 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,800&family=Lilita+One&display=swap" rel="stylesheet">
+
+block content
+    head
+        title Admin
+        style
+          include ../public/stylesheets/index.css
+    header 
+    a(href="/index") Home page
+    body
+        div(class="boxAdmin")
+            form(action="/choice", method="post")
+                button(type="submit",class="button2") Go to user page
+            form(action="/add_quiz", method="post")
+                button(type="submit",class="button2") Add new quiz
+            form(action="/edit", method="post")
+                button(type="submit",class="button2") Edit quiz
+            form(action="/delete_quiz", method="post")
+                button(type="submit",class="button2") Delete quiz
+    
