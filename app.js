@@ -17,10 +17,10 @@ var usersRouter = require('./routes/users');
 const addQuizRouter = require('./routes/add_quiz');
 app.use('/', addQuizRouter);
 
-const  password = "Daniel";
+const  password = "PASSWORD";
 
 const jwt = require('jsonwebtoken');
-const secretKey = 'salome'; 
+const secretKey = 'SECRETKEY'; 
 
 bcrypt 
  .genSalt(saltRounds) 
